@@ -18,33 +18,42 @@ STEP 6: Print the result.
 STEP 7 : Stop.
 ### Program:
 ```
-def create_matrix(n,m):
-         M = []
-         for i in range(n):
-                   row = []
-                   for j in range(m):
-                      x = int(input())
-                       row.append(x)
-           M.append(row)
-         return M
-r,c = input().split()
-A = create_matrix(int(r),int(c))
-B = create_matrix(int(r),int(c))
-C = []
-for i in range(int(r)):
-         R = []
- 
+reg no : 212223070023
+name : Saran Krishna P S
+def read_matrix(rows, cols):
+    matrix = []
+    for i in range(rows):
+        row = list(map(int, input().split()))
+        while len(row) != cols:
+            row = list(map(int, input().split()))
+        matrix.append(row)
+    return matrix
 
-        for j in range(int(c)):
-                item = A[i][j]-B[i][j]
-   R.append(item)
-C.append(R)
-print(A)
-print(B)
-print(C)
+def subtract_matrices(matrix1, matrix2):
+    result = []
+    for i in range(len(matrix1)):
+        row = []
+        for j in range(len(matrix1[0])):
+            row.append(matrix1[i][j] - matrix2[i][j])
+        result.append(row)
+    return result
+
+def main():
+    rows = int(input())
+    cols = int(input())
+    matrix1 = read_matrix(rows, cols)
+    matrix2 = read_matrix(rows, cols)
+    result = subtract_matrices(matrix1, matrix2)
+    for row in result:
+        print(' '.join(map(str, row)))
+
+if __name__ == "__main__":
+    main()
+
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/b1125b13-d26e-4404-acce-7dd2c1d2011c)
+![image](https://github.com/user-attachments/assets/7963c983-d2c1-4b84-bdb9-c61cda061688)
+
 
 ### Result: Thus, the given program is implemented and executed successfully .
 
@@ -67,24 +76,25 @@ STEP 7 : Stop.
 
 ### Program:
 ```
-class program:
 
-      def  __init__(self,a,b,c):
-                self.a=a
-                self.b=b
-                self.c=c
-        def display(self):
-               even = [i for i in range(self.a,self.c+1,self.b)]
-               print(even)
-a = int(input())
-b = int(input())
-c = int(input())
+reg no : 212223070023
+name : Saran Krishna P S
+class EvenNumberGenerator:
+    def __init__(self, start, end):
+        self.start = start
+        self.end = end
+        self.even_numbers = [x for x in range(start, end + 1) if x % 2 == 0]
 
-obj = program(a,b,c)
-obj.display()
+    def get_even_numbers(self):
+        return self.even_numbers
+
+generator = EvenNumberGenerator(200, 300)
+print(generator.get_even_numbers())
+
 ```
 ### Output:
- ![image](https://github.com/user-attachments/assets/a9707d46-2d47-4472-a6b3-b407a6f6ef71)
+![image](https://github.com/user-attachments/assets/209a1663-0138-41e5-91ed-f225fa087cf5)
+
 
 ### Result: Thus, the given program is implemented and executed successfully .
 
@@ -109,23 +119,20 @@ STEP 7 : Stop.
 
 ### Program:
 ```
-def create(r,c):
-            M=[]
-        for i in range(int(r)):
-             R = []
-        for j in range(int(c)):
-             x = int(input())
-             R.append(x)
-           M.append(R)
- return M
-r,c = input().split()
-matrix = create(int(r),int(c))
-print(matrix)
-T = [[r[i]for r in matrix]for i in range(len(matrix[0]))]
- print(T)
+
+reg no : 212223070023
+name : Saran Krishna P S
+rows = int(input())
+cols = int(input())
+matrix = [list(map(int, input().split())) for _ in range(rows)]
+transpose = [[matrix[j][i] for j in range(rows)] for i in range(cols)]
+for row in transpose:
+    print(' '.join(map(str, row)))
+
+
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/411a227a-f44d-4b1a-b489-c7592dddbb67)
+![image](https://github.com/user-attachments/assets/33ce8b3f-0e7f-4231-9199-0a909d6fb52f)
 
 ### Result: Thus, the given program is implemented and executed successfully .
  
@@ -153,38 +160,32 @@ STEP 7 : Stop.
 
 ### Program:
 ```
-def create_matrix(n,m):
-        M=[]
-        for i in range(n):
-                row=[]
-        for j in range(m):
-            x=int(input())
-            row.append(x)
-        M.append(row)
-      return M
-def print_matrix(M):
-    for i in range(len(M)):
-         for j in range(len(M[0])):
-               print(M[i][j], end=' ')
-     print()
-def isThoeplitz(M):
-#Type your code here
-for i in range(len(M)):
-      for j in range(len(M[0])):
-             if i>0 and j>0 and M[i][j]!=M[i-1][j-1]:
+
+reg no : 212223070023
+name : Saran Krishna P S
+def is_toeplitz(matrix):
+    rows = len(matrix)
+    cols = len(matrix[0])
+    for i in range(1, rows):
+        for j in range(1, cols):
+            if matrix[i][j] != matrix[i - 1][j - 1]:
                 return False
-       return True
-n,m = input().split()
-A = create_matrix(int(n),int(m))
-print("A=",A)
-if isThoeplitz(A):
-      print(A,"is a Toeplitz Matrix")
- else:
-       print(A,"is not a Toeplitz Matrix") print_matrix(A)
+    return True
+
+rows = int(input())
+cols = int(input())
+matrix = [list(map(int, input().split())) for _ in range(rows)]
+
+if is_toeplitz(matrix):
+    print("Toeplitz Matrix")
+else:
+    print("Not a Toeplitz Matrix")
+
+
 ```
 ### Output:
 
-![image](https://github.com/user-attachments/assets/0fb8f81b-ab07-4b3e-b273-035a0f38566d)
+![image](https://github.com/user-attachments/assets/cd144256-6d18-4e42-ab1a-39ed143f3b82)
 
 ### Result: Thus, the given program is implemented and executed successfully.
  
