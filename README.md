@@ -46,8 +46,8 @@ print(B)
 print(C)
 ```
 ### Output:
+![image](https://github.com/user-attachments/assets/715e58a2-ac73-4948-b611-c7ed1a20d74e)
 
-![image](https://github.com/user-attachments/assets/b1125b13-d26e-4404-acce-7dd2c1d2011c)
 
 ### Result: Thus, the given program is implemented and executed successfully .
 
@@ -89,7 +89,7 @@ obj = program(a,b,c)
 obj.display()
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/a9707d46-2d47-4472-a6b3-b407a6f6ef71)
+![image](https://github.com/user-attachments/assets/0bbace20-aa99-41c4-a05c-63b5dcf04a7d)
 
 ### Result: Thus, the given program is implemented and executed successfully .
 
@@ -132,7 +132,8 @@ T = [[r[i]for r in matrix]for i in range(len(matrix[0]))]
  print(T)
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/411a227a-f44d-4b1a-b489-c7592dddbb67)
+![image](https://github.com/user-attachments/assets/4f9b1d3d-84d8-4a05-8ffe-28c11a1283e5)
+
 
 ### Result: Thus, the given program is implemented and executed successfully .
  
@@ -192,7 +193,7 @@ if isThoeplitz(A):
        print(A,"is not a Toeplitz Matrix") print_matrix(A)
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/0fb8f81b-ab07-4b3e-b273-035a0f38566d)
+![Uploading image.png…]()
 
 ### Result: Thus, the given program is implemented and executed successfully.
  
