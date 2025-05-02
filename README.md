@@ -46,6 +46,7 @@ print(B)
 print(C)
 ```
 ### Output:
+
 ![image](https://github.com/user-attachments/assets/b1125b13-d26e-4404-acce-7dd2c1d2011c)
 
 ### Result: Thus, the given program is implemented and executed successfully .
@@ -88,7 +89,7 @@ obj = program(a,b,c)
 obj.display()
 ```
 ### Output:
- ![image](https://github.com/user-attachments/assets/a9707d46-2d47-4472-a6b3-b407a6f6ef71)
+![image](https://github.com/user-attachments/assets/a9707d46-2d47-4472-a6b3-b407a6f6ef71)
 
 ### Result: Thus, the given program is implemented and executed successfully .
 
@@ -191,7 +192,7 @@ if isThoeplitz(A):
        print(A,"is not a Toeplitz Matrix") print_matrix(A)
 ```
 ### Output:
-
+![image](https://github.com/user-attachments/assets/0fb8f81b-ab07-4b3e-b273-035a0f38566d)
 
 ### Result: Thus, the given program is implemented and executed successfully.
  
