@@ -18,6 +18,8 @@ STEP 6: Print the result.
 STEP 7 : Stop.
 ### Program:
 ```
+reg no:212223070023
+name:Saran Krishna P S
 def create_matrix(n,m):
          M = []
          for i in range(n):
@@ -67,6 +69,8 @@ STEP 7 : Stop.
 
 ### Program:
 ```
+reg no:212223070023
+name:Saran Krishna P S
 class program:
 
       def  __init__(self,a,b,c):
@@ -109,6 +113,8 @@ STEP 7 : Stop.
 
 ### Program:
 ```
+reg no:212223070023
+name:Saran Krishna P S
 def create(r,c):
             M=[]
         for i in range(int(r)):
@@ -153,6 +159,8 @@ STEP 7 : Stop.
 
 ### Program:
 ```
+reg no:212223070023
+name:Saran Krishna P S
 def create_matrix(n,m):
         M=[]
         for i in range(n):
@@ -184,7 +192,6 @@ if isThoeplitz(A):
 ```
 ### Output:
 
-![image](https://github.com/user-attachments/assets/0fb8f81b-ab07-4b3e-b273-035a0f38566d)
 
 ### Result: Thus, the given program is implemented and executed successfully.
  
